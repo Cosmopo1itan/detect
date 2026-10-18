@@ -55,6 +55,23 @@
 2. Создать признак `Hour` из `Time`.
 3. Преобразовать `Amount` с помощью `log1p` и при необходимости масштабировать признаки.
 4. Разделить данные на train и test с учётом времени или с использованием стратификации.
+
+## Запуск проекта
+
+1. Скачайте датасет:
+   https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+2. Распакуйте `creditcard.csv` в папку рядом с `detect.ipynb`.
+3. Установите зависимости:
+
+   ```bash
+   pip install pandas numpy matplotlib seaborn ipykernel
+   ```
+
+4. Откройте `detect.ipynb` в VS Code с расширениями Python и Jupyter.
+5. Выберите Python-ядро и выполните все ячейки последовательно.
+
+Файл `creditcard.csv` не хранится в репозитории.
+
 5. Обучить baseline-модель, например логистическую регрессию.
 6. Обучить более сложные модели: Random Forest, LightGBM или CatBoost.
 7. Подобрать порог классификации по AUPRC, precision/recall и бизнес-метрике.
